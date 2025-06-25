@@ -3,10 +3,6 @@ import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 
 const ffmpeg = createFFmpeg({
   log: true,
-  progress: (progress: { ratio: number }) => {
-    const { ratio } = progress;
-    console.log(`Прогресс обработки: ${(ratio * 100).toFixed(1)}%`);
-  },
 });
 
 type Frame = {
@@ -307,7 +303,7 @@ export default function VideoPlayer() {
                 color: ffmpegReady ? "white" : "black",
                 border: "none",
                 borderRadius: 4,
-                cursor: ffmpegReady ? "pointer" : 'not-allowed',
+                cursor: ffmpegReady ? "pointer" : "not-allowed",
               }}
             >
               Обрезать видео

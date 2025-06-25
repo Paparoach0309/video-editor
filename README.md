@@ -9,7 +9,6 @@
 
 - Node.js (рекомендуется версия 20 и выше)
 - npm или yarn
-- Современный браузер с поддержкой WebAssembly и SharedArrayBuffer
 
 ## Установка
 
